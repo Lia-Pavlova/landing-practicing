@@ -3,6 +3,7 @@ import { SocialNetworks } from '../components/SocialNetworks'
 import { ArtButton } from '../components/ArtButton'
 import { Navigation } from '../components/Navigation'
 import { Title } from '../components/Title'
+import { ArtMenu } from '../components/ArtMenu'
 
 import cl from 'classnames'
 import styles from '../styles/home.module.scss'
@@ -28,6 +29,10 @@ export default function Home() {
             </li>
           </ul>
         </div>
+      </section>
+      <section className={cl(styles.section, styles.sectionEarth)}>
+        <Title size="Large">Factions</Title>
+        <ArtMenu />
       </section>
     </article>
   )
